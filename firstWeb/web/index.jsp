@@ -17,7 +17,13 @@
   </head>
   <body>
   <script type="text/javascript">
-      var setting = {	};
+      var setting = {
+          async:{
+              enable : true,
+              url : "/queryServlet",
+              autoParam : ["id"]
+          }
+      };
 
       var zNodes =[
           { name:"父节点1 - 展开", open:true,
@@ -67,7 +73,7 @@
       ];
 
       $(document).ready(function(){
-          $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+          $.fn.zTree.init($("#treeDemo"), setting, null);
       });
 
 
