@@ -1,7 +1,5 @@
 package com.lb.util;
 
-import com.mysql.cj.QueryResult;
-
 import java.sql.*;
 
 /**
