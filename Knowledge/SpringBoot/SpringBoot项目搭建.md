@@ -195,7 +195,21 @@ public @interface EnableAutoConfiguration {
 
 # 快速创建Spring Boot工程
 
+IDEA支持使用Spring的项目创建向导快速创建一个SpringBoot项目
 
+选择我们需要的模块，想到会联网创建SpringBoot项目
+
+默认生成的SpringBoot项目：
+
+-   主程序已经生成好，我们只需写我们自己的逻辑
+
+-   Resources文件夹中的目录结构
+
+    -   static：保存所有的静态资源（js，css，images）
+    -   templates：保存所有的模板页面（SpringBoot默认jar包使用嵌入式的Tomcat，默认不支持JSP页面），可以使用模板引擎（freemarker，thymeleaf）
+    -   application.properties：SpringBoot应用的配置文件
+
+    
 
 
 
