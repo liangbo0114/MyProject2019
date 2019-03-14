@@ -188,3 +188,23 @@ public class Person {
 |      SpEL      |          不支持          |    支持    |
 | JSR303数据校验 |           支持           |   不支持   |
 
+#### c) @PropertySource和@ImportResource
+
+@**PropertySource**：加载指定的配置文件
+
+```java
+@PropertySource(value = "classpath:person.properties")
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private int age;
+    private Boolean isBoss;
+    private Date birth;
+    private Map<String, Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+```
+
+**@ImportResource**：导入Spring的配置文件，让配置文件里的内容生效

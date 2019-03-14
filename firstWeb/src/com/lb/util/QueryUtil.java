@@ -1,5 +1,6 @@
 package com.lb.util;
 
+import com.alibaba.fastjson.JSONObject;
 import com.lb.entity.CityEntity;
 
 import java.sql.ResultSet;

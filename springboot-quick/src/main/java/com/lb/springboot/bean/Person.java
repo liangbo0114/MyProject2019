@@ -1,6 +1,7 @@
 package com.lb.springboot.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -13,6 +14,8 @@ import java.util.Map;
  *          prefix = "person" ： 配置文件中哪个下面的所有属性进行映射
  *  只有这个组件是容器中的组件，才能提供 @ConfigurationProperties 功能
  */
+
+@PropertySource(value = "classpath:person.properties")
 @Component
 @ConfigurationProperties(prefix = "person")
 public class Person {
